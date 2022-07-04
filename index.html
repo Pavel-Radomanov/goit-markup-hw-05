@@ -75,7 +75,18 @@
     <main>
       <section class="hero">
         <h1 class="head-hero">Эффективные решения для вашего бизнеса</h1>
-        <button class="btn" type="button">Заказать услугу</button>
+        <button class="btn" data-modal-open type="button">
+          Заказать услугу
+        </button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="hero-modal">
+            <button class="hero-modal-clsbtn" data-modal-close type="button">
+              <svg width="18" height="18">
+                <use href="./images/icons.svg#icon-cross-black"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
       <section class="section-min">
         <div class="container">
@@ -140,13 +151,15 @@
           </ul>
         </div>
       </section>
-      <div class="container">
-        <section class="section">
+
+      <section class="section">
+        <div class="container">
           <h2 class="work2">Чем мы занимаемся</h2>
           <ul class="f-lab work-f">
             <li class="wert version">
-              <a class="img-block" href=""
+              <a href=""
                 ><img
+                  class="img-block"
                   src="./images/algoritm-table.jpg"
                   alt="Работа алгоритм"
                   width="370"
@@ -157,8 +170,9 @@
               </div>
             </li>
             <li class="wert version">
-              <a class="img-block" href=""
+              <a href=""
                 ><img
+                  class="img-block"
                   src="./images/mobile-design.jpg"
                   alt="Мобильные приложения"
                   width="370"
@@ -169,8 +183,9 @@
               </div>
             </li>
             <li class="wert version">
-              <a class="img-block" href=""
+              <a href=""
                 ><img
+                  class="img-block"
                   src="./images/design-color.jpg"
                   alt="Дизайн"
                   width="370"
@@ -181,8 +196,8 @@
               </div>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <section class="section-staff back">
         <div class="container">
@@ -600,5 +615,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
